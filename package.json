@@ -1,0 +1,44 @@
+{
+  "name": "ov-nuxt-vue-app",
+  "version": "1.0.0",
+  "description": "a nuxt vue app",
+  "author": "mr.shi",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=devlopment nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "ava",
+    "test:unit": "cross-env TEST=unit ava ./test/specs/**/*",
+    "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*"
+  },
+  "pre-commit": [
+
+  ],
+  "dependencies": {
+    "ant-design-vue": "^1.5.6",
+    "eslint": "^7.0.0",
+    "nuxt": "^2.0.0",
+    "pre-commit": "^1.2.2"
+  },
+  "devDependencies": {
+    "@ava/babel": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "ava": "^3.0.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "browser-env": "^3.2.5",
+    "cross-env": "^7.0.2",
+    "require-extension-hooks": "^0.3.3",
+    "require-extension-hooks-babel": "^1.0.0",
+    "require-extension-hooks-vue": "^2.0.0",
+    "vxe-table": "^2.5.0",
+    "xe-utils": "^2.3.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3334"
+    }
+  }
+}
